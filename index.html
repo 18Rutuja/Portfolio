@@ -10,6 +10,209 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Raleway:wght@300&display=swap"
         rel="stylesheet">
     <style>
+            nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 80px;
+        background-color: rgb(18, 18, 62);
+
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav ul li {
+        list-style: none;
+        margin: 0 23px;
+
+
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+    }
+
+    nav ul li a:hover {
+        color: rgb(153, 153, 221);
+    }
+
+    main hr {
+        border: 0;
+        background: #9c97f1;
+        height: 1.2px;
+        margin: 40px 84px;
+    }
+
+    .left {
+        font-size: 1.5rem;
+
+
+    }
+
+    .left a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .right {
+        font-size: 1rem;
+    }
+
+    .firstSection .rightSection .right-image {
+        width: auto;
+        height: 400px;
+
+
+    }
+
+    .purple {
+        color: rgb(154, 72, 231);
+    }
+
+    #element {
+        color: rgb(154, 72, 231);
+    }
+
+    .firstSection {
+        display: flex;
+        justify-content: space-around;
+        margin: 180px 0;
+        align-items: center;
+
+    }
+
+    .firstSection>div {
+
+        width: 30%;
+    }
+
+    .rightSection {
+        width: 80%;
+        margin: 50px 0;
+    }
+
+    .leftSection {
+
+        font-size: 3rem;
+
+    }
+
+    .leftSection .btn {
+        padding: 12px;
+        background: #1e2167;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+        border: 1px solid white;
+        font-size: 20px;
+
+    }
+
+    .leftSection .btn:hover {
+        background: rgb(99, 99, 198);
+
+    }
+
+    .leftSection .btn a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .leftSection .button {
+        padding: 50px;
+    }
+
+    .contact {
+        justify-content: space-around;
+
+    }
+
+    input {
+        border-radius: 15px;
+        width: 380px;
+        height: 40px;
+        margin: 18px;
+        padding-left: 12px;
+        color: black;
+        font-size: large;
+        background: #b6b8ed;
+        border: 1px solid white;
+
+
+    }
+
+    lable {
+        font-size: large;
+    }
+
+    placeholder {
+        padding: 20px;
+        color: black;
+    }
+
+    .submit {
+        margin: 20px 20px;
+        color: white;
+        background: #1e2167;
+        padding: 20px 40px;
+        border-radius: 10px;
+        border: 1px solid white;
+
+    }
+
+    footer {
+        background-color: #16162f;
+        /* height: 233px; */
+    }
+
+    .footer {
+        display: flex;
+        padding: 23px 122px;
+        justify-content: space-evenly;
+
+    }
+
+    .footer ul {
+        list-style: none;
+    }
+
+    .footer>div {
+        width: 223px;
+    }
+
+    footer .footer-rights {
+        text-align: center;
+        color: gray;
+        padding: 12px 0;
+    }
+    .footer .p{
+            font-size: 12px;
+        }
+
+    .gmail {
+        width: 20px;
+        height: 20px;
+    }
+
+    .phone {
+        width: 20px;
+        height: 20px;
+    }
+
+    .linkedin {
+
+        width: 20px;
+        height: 20px;
+
+    }
+        html {
+        scroll-behavior: smooth;
+        }
+
         * {
             margin: 0;
             padding: 0;
@@ -263,8 +466,8 @@
             <div class="left">Rutuja's Portfolio</div>
             <div class="right">
                 <ul>
-                    <li><a href="/index.html">Home</a></li>
-                    <li><a href="/About.html">About</a></li>
+                    <li><a href="./pages/About.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
                     <li><a href="/index.html">Projects</a></li>
                     <li><a href="https://drive.google.com/file/d/1s-Uw9iQoNginqphyt2gAHBtPSzKM2U_h/view">Resume</a></li>
                     <li><a href="/contact.html">Contact me</a></li>
@@ -302,7 +505,7 @@
 
 
 
-        <section class="first">
+        <section class="first" id="about">
             <div class="about-one">
                 <center>
                     <h1>About me</h1>
@@ -428,6 +631,28 @@
         </section>
 
 
+        <section class="contact" id="contact">
+            <center>
+                <div class="contact-me">
+                    <form>
+                        <lable>
+                            Name </lable><br>
+
+                        <input type="text" class="name" placeholder=" Name"><br>
+
+                        <lable> Email </label><br>
+                            <input type="email" class="email" placeholder="email">
+                            <br>
+                            <lable> Massage</lable><br>
+                            <input type="text" class="massage" placeholder="Write your massage here.."><br>
+
+                            <!-- <input type="button" class="submit" placeholder="submit"></input> -->
+                            <button class="submit">Submit</button>
+                            <br><br><br><br><br><br>
+                    </form>
+                </div>
+            </center>
+        </section>
     </main>
 
     <footer>
